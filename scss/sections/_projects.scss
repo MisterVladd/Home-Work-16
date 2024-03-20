@@ -1,0 +1,53 @@
+.project{
+    display: grid;
+    gap: 57rem;
+    margin-bottom: 100rem;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+        @include tablet{
+            flex-direction: column;
+        }
+        &:nth-child(even){
+            .project-item__img{
+                order: 2;
+                @include tablet{
+                    order: initial;
+                }
+            }
+        }
+        &__img {
+            max-width: 548rem;
+            flex-shrink: 0;
+        }
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 30rem;
+            align-items: flex-start;
+            max-width: 582rem;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 42rem;
+        }
+    
+        &__desc {
+            font-weight: 400;
+            font-size: 16rem;
+            line-height: 162%;
+        }
+    
+        &__btn {
+            font-weight: 400;
+            font-size: 14rem;
+            padding: 7rem 14rem;
+        }
+    }
+}
+
+.btn {}

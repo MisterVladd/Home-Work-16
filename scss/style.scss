@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+@import 'scroll';
+
+
+//sections
+@import 'sections/header';
+@import 'sections/welcome';
+@import 'sections/service';
+@import 'sections/projects';
+@import 'sections/avatar';
+@import 'sections/join';
+@import 'sections/footer';

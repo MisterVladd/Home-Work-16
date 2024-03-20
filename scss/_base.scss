@@ -1,0 +1,38 @@
+html{
+    font-size: 1px;
+    
+    @include tablet{
+        font-size: 0.9px;
+    }
+    
+    @include mobile{
+        font-size: 0.8px;
+    }
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 16rem;
+    background: var(--bg);
+    color: #fff;
+}
+
+body.lock{
+    @include desktop{
+        overflow: hidden;
+    }
+  }
+
+.container{
+    padding: 0 20rem;
+    max-width: 1210rem;
+    margin-inline: auto;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    font-family: var(--font-family);
+    background: var(--btn-bg);
+}

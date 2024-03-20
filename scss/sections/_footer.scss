@@ -1,0 +1,147 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33rem;
+    gap: 20rem;
+
+    @include desktop {
+        justify-content: space-around;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__zone {
+        display: flex;
+        gap: 15rem;
+        flex-direction: column;
+
+        @include mobile {
+            align-items: center;
+        }
+    }
+
+&__zone-title {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    padding-left: 6rem;
+    transition: .3s all ease-in-out;
+        
+    &:hover {
+        color: var(--hover-color);
+    }
+}
+
+&__zone-list {
+    display: grid;
+    gap: 10rem;
+
+    & a {
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.8);
+        transition: .3s all ease-in-out;
+        
+        &:hover {
+            color: var(--hover-color);
+        }
+    }
+}
+
+&__zone-social {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+}
+
+&__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50rem;
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mobile-mini {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+&__info-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 222%;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+    transition: .3s all ease-in-out;
+        
+    &:hover {
+        color: var(--hover-color);
+    }
+}
+
+&-line {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33rem;
+    padding-bottom: 36rem;
+
+    &__year {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 14rem;
+        line-height: 100%;
+        color: rgba(255, 255, 255, 0.8);
+        transition: .3s all ease-in-out;
+        
+        &:hover {
+            color: var(--hover-color);
+        }
+    }
+
+    &__privacy {
+        display: flex;
+        gap: 54rem;
+        padding-right: 40rem;
+        
+
+        @include mobile {
+            padding-right: 0rem;
+            gap: 20rem;
+        }
+
+        & a {
+            font-weight: 400;
+            font-size: 14rem;
+            line-height: 100%;
+            color: rgba(255, 255, 255, 0.8);
+            transition: .3s all ease-in-out;
+        
+        &:hover {
+            color: var(--hover-color);
+        }
+        }
+    }
+}
+
+.primary {
+    font-weight: 500;
+}
